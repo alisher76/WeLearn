@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		AC8803F9206329D8008D79F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8803F8206329D8008D79F6 /* AppDelegate.swift */; };
-		AC8803FB206329D8008D79F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8803FA206329D8008D79F6 /* ViewController.swift */; };
 		AC8803FE206329D8008D79F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FC206329D8008D79F6 /* Main.storyboard */; };
 		AC880400206329D8008D79F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FF206329D8008D79F6 /* Assets.xcassets */; };
 		AC880403206329D8008D79F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC880401206329D8008D79F6 /* LaunchScreen.storyboard */; };
 		AC88040E206329D8008D79F6 /* WeLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88040D206329D8008D79F6 /* WeLearnTests.swift */; };
+		AC88041B20632A6D008D79F6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88041A20632A6D008D79F6 /* HomeVC.swift */; };
+		AC88041E20632EE3008D79F6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88041D20632EE3008D79F6 /* GradientView.swift */; };
+		AC8804242063513F008D79F6 /* HomeVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8804232063513F008D79F6 /* HomeVCCell.swift */; };
+		AC88042620635334008D79F6 /* TopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88042520635334008D79F6 /* TopicVC.swift */; };
+		AC8804282063595D008D79F6 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8804272063595D008D79F6 /* CourseCell.swift */; };
+		AC88042B20636104008D79F6 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88042A20636104008D79F6 /* UIImage.swift */; };
+		AC88042D2063636C008D79F6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88042C2063636C008D79F6 /* CollectionViewCell.swift */; };
+		AC88042F20636535008D79F6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88042E20636535008D79F6 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +35,6 @@
 /* Begin PBXFileReference section */
 		AC8803F5206329D8008D79F6 /* WeLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8803F8206329D8008D79F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC8803FA206329D8008D79F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC8803FD206329D8008D79F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC8803FF206329D8008D79F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC880402206329D8008D79F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,14 @@
 		AC880409206329D8008D79F6 /* WeLearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeLearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC88040D206329D8008D79F6 /* WeLearnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLearnTests.swift; sourceTree = "<group>"; };
 		AC88040F206329D9008D79F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC88041A20632A6D008D79F6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		AC88041D20632EE3008D79F6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		AC8804232063513F008D79F6 /* HomeVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCCell.swift; sourceTree = "<group>"; };
+		AC88042520635334008D79F6 /* TopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVC.swift; sourceTree = "<group>"; };
+		AC8804272063595D008D79F6 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		AC88042A20636104008D79F6 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		AC88042C2063636C008D79F6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		AC88042E20636535008D79F6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +91,13 @@
 		AC8803F7206329D8008D79F6 /* WeLearn */ = {
 			isa = PBXGroup;
 			children = (
+				AC880429206360EE008D79F6 /* Extensions */,
+				AC8804222063510A008D79F6 /* Controllers */,
+				AC88042120635102008D79F6 /* Models */,
+				AC880420206350F3008D79F6 /* Views */,
+				AC88041F2063404F008D79F6 /* Gonts */,
+				AC88041C20632ECC008D79F6 /* Utilities */,
 				AC8803F8206329D8008D79F6 /* AppDelegate.swift */,
-				AC8803FA206329D8008D79F6 /* ViewController.swift */,
 				AC8803FC206329D8008D79F6 /* Main.storyboard */,
 				AC8803FF206329D8008D79F6 /* Assets.xcassets */,
 				AC880401206329D8008D79F6 /* LaunchScreen.storyboard */,
@@ -94,6 +113,56 @@
 				AC88040F206329D9008D79F6 /* Info.plist */,
 			);
 			path = WeLearnTests;
+			sourceTree = "<group>";
+		};
+		AC88041C20632ECC008D79F6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AC88041D20632EE3008D79F6 /* GradientView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AC88041F2063404F008D79F6 /* Gonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gonts;
+			sourceTree = "<group>";
+		};
+		AC880420206350F3008D79F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC8804232063513F008D79F6 /* HomeVCCell.swift */,
+				AC8804272063595D008D79F6 /* CourseCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC88042120635102008D79F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC8804222063510A008D79F6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC88041A20632A6D008D79F6 /* HomeVC.swift */,
+				AC88042520635334008D79F6 /* TopicVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AC880429206360EE008D79F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC88042A20636104008D79F6 /* UIImage.swift */,
+				AC88042C2063636C008D79F6 /* CollectionViewCell.swift */,
+				AC88042E20636535008D79F6 /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +268,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC8803FB206329D8008D79F6 /* ViewController.swift in Sources */,
+				AC8804282063595D008D79F6 /* CourseCell.swift in Sources */,
 				AC8803F9206329D8008D79F6 /* AppDelegate.swift in Sources */,
+				AC88042D2063636C008D79F6 /* CollectionViewCell.swift in Sources */,
+				AC88042620635334008D79F6 /* TopicVC.swift in Sources */,
+				AC8804242063513F008D79F6 /* HomeVCCell.swift in Sources */,
+				AC88041B20632A6D008D79F6 /* HomeVC.swift in Sources */,
+				AC88041E20632EE3008D79F6 /* GradientView.swift in Sources */,
+				AC88042F20636535008D79F6 /* UIView.swift in Sources */,
+				AC88042B20636104008D79F6 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

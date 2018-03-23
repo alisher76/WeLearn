@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381DDB270EC35A749DD32A21 /* Pods_WeLearnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C418D03CF9393DD533B627B /* Pods_WeLearnTests.framework */; };
+		755A8D5D4929A68F5E677AAA /* Pods_WeLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF2A760FDD691A7C35BFAD0 /* Pods_WeLearn.framework */; };
 		AC8803F9206329D8008D79F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8803F8206329D8008D79F6 /* AppDelegate.swift */; };
 		AC8803FE206329D8008D79F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FC206329D8008D79F6 /* Main.storyboard */; };
 		AC880400206329D8008D79F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FF206329D8008D79F6 /* Assets.xcassets */; };
@@ -20,6 +22,10 @@
 		AC88042B20636104008D79F6 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88042A20636104008D79F6 /* UIImage.swift */; };
 		AC88042D2063636C008D79F6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88042C2063636C008D79F6 /* CollectionViewCell.swift */; };
 		AC88042F20636535008D79F6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88042E20636535008D79F6 /* UIView.swift */; };
+		AC8804312064775F008D79F6 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8804302064775F008D79F6 /* TutorialVC.swift */; };
+		AC88043320647ECB008D79F6 /* TutorialTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88043220647ECB008D79F6 /* TutorialTextCell.swift */; };
+		AC88043520647EF0008D79F6 /* TuorialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88043420647EF0008D79F6 /* TuorialTableViewCell.swift */; };
+		AC8804372064821A008D79F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC8804362064821A008D79F6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C4383C3B96375C751515E33 /* Pods-WeLearnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeLearnTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeLearnTests/Pods-WeLearnTests.debug.xcconfig"; sourceTree = "<group>"; };
+		14753AD3499E2980712C1AF1 /* Pods-WeLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeLearn/Pods-WeLearn.release.xcconfig"; sourceTree = "<group>"; };
+		2C418D03CF9393DD533B627B /* Pods_WeLearnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeLearnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF2A760FDD691A7C35BFAD0 /* Pods_WeLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8803F5206329D8008D79F6 /* WeLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8803F8206329D8008D79F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC8803FD206329D8008D79F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,6 +60,12 @@
 		AC88042A20636104008D79F6 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		AC88042C2063636C008D79F6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		AC88042E20636535008D79F6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		AC8804302064775F008D79F6 /* TutorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
+		AC88043220647ECB008D79F6 /* TutorialTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTextCell.swift; sourceTree = "<group>"; };
+		AC88043420647EF0008D79F6 /* TuorialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuorialTableViewCell.swift; sourceTree = "<group>"; };
+		AC8804362064821A008D79F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC1EA0A655B68DE0E8B2782B /* Pods-WeLearnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeLearnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeLearnTests/Pods-WeLearnTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0E6B1039CF27474FB80E516 /* Pods-WeLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeLearn/Pods-WeLearn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755A8D5D4929A68F5E677AAA /* Pods_WeLearn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,18 +81,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381DDB270EC35A749DD32A21 /* Pods_WeLearnTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		299B06C45C401243ED044F8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0E6B1039CF27474FB80E516 /* Pods-WeLearn.debug.xcconfig */,
+				14753AD3499E2980712C1AF1 /* Pods-WeLearn.release.xcconfig */,
+				0C4383C3B96375C751515E33 /* Pods-WeLearnTests.debug.xcconfig */,
+				CC1EA0A655B68DE0E8B2782B /* Pods-WeLearnTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E2AF3058432C4A776513432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAF2A760FDD691A7C35BFAD0 /* Pods_WeLearn.framework */,
+				2C418D03CF9393DD533B627B /* Pods_WeLearnTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC8803EC206329D8008D79F6 = {
 			isa = PBXGroup;
 			children = (
 				AC8803F7206329D8008D79F6 /* WeLearn */,
 				AC88040C206329D8008D79F6 /* WeLearnTests */,
 				AC8803F6206329D8008D79F6 /* Products */,
+				299B06C45C401243ED044F8A /* Pods */,
+				6E2AF3058432C4A776513432 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +141,7 @@
 				AC8803FC206329D8008D79F6 /* Main.storyboard */,
 				AC8803FF206329D8008D79F6 /* Assets.xcassets */,
 				AC880401206329D8008D79F6 /* LaunchScreen.storyboard */,
+				AC8804362064821A008D79F6 /* GoogleService-Info.plist */,
 				AC880404206329D8008D79F6 /* Info.plist */,
 			);
 			path = WeLearn;
@@ -135,6 +176,8 @@
 			children = (
 				AC8804232063513F008D79F6 /* HomeVCCell.swift */,
 				AC8804272063595D008D79F6 /* CourseCell.swift */,
+				AC88043220647ECB008D79F6 /* TutorialTextCell.swift */,
+				AC88043420647EF0008D79F6 /* TuorialTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +194,7 @@
 			children = (
 				AC88041A20632A6D008D79F6 /* HomeVC.swift */,
 				AC88042520635334008D79F6 /* TopicVC.swift */,
+				AC8804302064775F008D79F6 /* TutorialVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC880412206329D9008D79F6 /* Build configuration list for PBXNativeTarget "WeLearn" */;
 			buildPhases = (
+				DA00B752B604EDEAB8AA100F /* [CP] Check Pods Manifest.lock */,
 				AC8803F1206329D8008D79F6 /* Sources */,
 				AC8803F2206329D8008D79F6 /* Frameworks */,
 				AC8803F3206329D8008D79F6 /* Resources */,
+				4FF8BB2FE7BC29EBE436F98A /* [CP] Embed Pods Frameworks */,
+				2A19CDC0E7934B80F9AB99F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC880415206329D9008D79F6 /* Build configuration list for PBXNativeTarget "WeLearnTests" */;
 			buildPhases = (
+				53F08B21F8DF6AF4A03C61EA /* [CP] Check Pods Manifest.lock */,
 				AC880405206329D8008D79F6 /* Sources */,
 				AC880406206329D8008D79F6 /* Frameworks */,
 				AC880407206329D8008D79F6 /* Resources */,
+				39BA0E7C4BBA532BFA5251E4 /* [CP] Embed Pods Frameworks */,
+				0F6D4D291808B01A5808D8CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC880403206329D8008D79F6 /* LaunchScreen.storyboard in Resources */,
+				AC8804372064821A008D79F6 /* GoogleService-Info.plist in Resources */,
 				AC880400206329D8008D79F6 /* Assets.xcassets in Resources */,
 				AC8803FE206329D8008D79F6 /* Main.storyboard in Resources */,
 			);
@@ -263,6 +314,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F6D4D291808B01A5808D8CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeLearnTests/Pods-WeLearnTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A19CDC0E7934B80F9AB99F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeLearn/Pods-WeLearn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39BA0E7C4BBA532BFA5251E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeLearnTests/Pods-WeLearnTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FF8BB2FE7BC29EBE436F98A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeLearn/Pods-WeLearn-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeLearn/Pods-WeLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53F08B21F8DF6AF4A03C61EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeLearnTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA00B752B604EDEAB8AA100F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC8803F1206329D8008D79F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -274,8 +429,11 @@
 				AC88042620635334008D79F6 /* TopicVC.swift in Sources */,
 				AC8804242063513F008D79F6 /* HomeVCCell.swift in Sources */,
 				AC88041B20632A6D008D79F6 /* HomeVC.swift in Sources */,
+				AC88043320647ECB008D79F6 /* TutorialTextCell.swift in Sources */,
 				AC88041E20632EE3008D79F6 /* GradientView.swift in Sources */,
+				AC88043520647EF0008D79F6 /* TuorialTableViewCell.swift in Sources */,
 				AC88042F20636535008D79F6 /* UIView.swift in Sources */,
+				AC8804312064775F008D79F6 /* TutorialVC.swift in Sources */,
 				AC88042B20636104008D79F6 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +585,7 @@
 		};
 		AC880413206329D9008D79F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E6B1039CF27474FB80E516 /* Pods-WeLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +601,7 @@
 		};
 		AC880414206329D9008D79F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14753AD3499E2980712C1AF1 /* Pods-WeLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,6 +617,7 @@
 		};
 		AC880416206329D9008D79F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4383C3B96375C751515E33 /* Pods-WeLearnTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -474,6 +635,7 @@
 		};
 		AC880417206329D9008D79F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC1EA0A655B68DE0E8B2782B /* Pods-WeLearnTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -26,6 +26,7 @@
 		AC88043320647ECB008D79F6 /* TutorialTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88043220647ECB008D79F6 /* TutorialTextCell.swift */; };
 		AC88043520647EF0008D79F6 /* TuorialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88043420647EF0008D79F6 /* TuorialTableViewCell.swift */; };
 		AC8804372064821A008D79F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC8804362064821A008D79F6 /* GoogleService-Info.plist */; };
+		ACEB58A5206AE2AC00D10881 /* MainCategoryFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58A4206AE2AC00D10881 /* MainCategoryFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		AC88043220647ECB008D79F6 /* TutorialTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTextCell.swift; sourceTree = "<group>"; };
 		AC88043420647EF0008D79F6 /* TuorialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuorialTableViewCell.swift; sourceTree = "<group>"; };
 		AC8804362064821A008D79F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACEB58A4206AE2AC00D10881 /* MainCategoryFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategoryFlowLayout.swift; sourceTree = "<group>"; };
 		CC1EA0A655B68DE0E8B2782B /* Pods-WeLearnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeLearnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeLearnTests/Pods-WeLearnTests.release.xcconfig"; sourceTree = "<group>"; };
 		E0E6B1039CF27474FB80E516 /* Pods-WeLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeLearn/Pods-WeLearn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 		AC8803F7206329D8008D79F6 /* WeLearn */ = {
 			isa = PBXGroup;
 			children = (
+				ACEB58A3206AE28A00D10881 /* Layouts */,
 				AC880429206360EE008D79F6 /* Extensions */,
 				AC8804222063510A008D79F6 /* Controllers */,
 				AC88042120635102008D79F6 /* Models */,
@@ -207,6 +210,14 @@
 				AC88042E20636535008D79F6 /* UIView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACEB58A3206AE28A00D10881 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				ACEB58A4206AE2AC00D10881 /* MainCategoryFlowLayout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEB58A5206AE2AC00D10881 /* MainCategoryFlowLayout.swift in Sources */,
 				AC8804282063595D008D79F6 /* CourseCell.swift in Sources */,
 				AC8803F9206329D8008D79F6 /* AppDelegate.swift in Sources */,
 				AC88042D2063636C008D79F6 /* CollectionViewCell.swift in Sources */,

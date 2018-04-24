@@ -9,10 +9,15 @@
 import UIKit
 
 class HomeVCCell: UICollectionViewCell {
-
+    
+    
+    @IBOutlet weak var categoryTitleLabel: UILabel!
+    @IBOutlet weak var categoryDescriptionLabel: UILabel!
+    @IBOutlet weak var categoryImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.roundCornersForAspectFit(radius: 10.0)
+        self.roundCornersForAspectFit(radius: 0.5)
     }
 }
 

@@ -28,6 +28,7 @@ extension UIImageView
                 drawingRect.size.height = drawingRect.size.width / imageScale
                 drawingRect.origin.y = (self.bounds.size.height - drawingRect.size.height) / 2
             }
+            // Draw using the Bezier
             let path = UIBezierPath(roundedRect: drawingRect, cornerRadius: radius)
             let mask = CAShapeLayer()
             mask.path = path.cgPath

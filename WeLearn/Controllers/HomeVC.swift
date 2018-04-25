@@ -38,6 +38,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         cell.layer.cornerRadius = 14
+        cell.layer.transform = animateCell(cellFrame: cell.frame)
         return cell
     }
     
@@ -48,7 +49,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = Int(collectionView.frame.width - 40)
-        let height = Int(collectionView.frame.height - 100)
+        let height = Int(collectionView.frame.height - 60)
         return CGSize(width: width, height: height)
     }
     
@@ -62,30 +63,32 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
                 
                 let translationX = cellFrame.origin.x / 5
                 cell.categoryImage.transform = CGAffineTransform(translationX: translationX, y: 0)
-                
-                let andleFromX = Double((-cellFrame.origin.x) / 8)
-                let angle = CGFloat((andleFromX * Double.pi) / 100.0)
-                
-                var transform = CATransform3DIdentity
-                transform.m34 = -1.0/1000
-                let rotation = CATransform3DRotate(transform, angle, 0, 1, 0)
-                cell.layer.transform = rotation
-                
-                // get a value between 1 and 0
-                var scaleFromX = (1000 - (cellFrame.origin.x - 200)) / 1000
-                let scaleMax: CGFloat = 1.0
-                let scaleMin: CGFloat = 0.4
-                if scaleFromX > scaleMax {
-                    scaleFromX = scaleMax
-                }
-                if scaleFromX < scaleMin {
-                    scaleFromX = scaleMin
-                }
-                
-                let scale = CATransform3DScale(CATransform3DIdentity, scaleFromX, scaleFromX, 1)
-                cell.layer.transform = scale
+                cell.layer.transform = animateCell(cellFrame: cellFrame)
             }
         }
+    }
+    
+    func animateCell(cellFrame: CGRect) -> CATransform3D {
+        let andleFromX = Double((-cellFrame.origin.x) / 12)
+        let angle = CGFloat((andleFromX * Double.pi) / 300.0)
+        
+        var transform = CATransform3DIdentity
+        transform.m34 = -1.0/1000
+        let rotation = CATransform3DRotate(transform, angle, 0, 1, 0)
+        
+        // get a value between 1 and 0
+        var scaleFromX = (1000 - (cellFrame.origin.x - 200)) / 1000
+        let scaleMax: CGFloat = 1.0
+        let scaleMin: CGFloat = 0.2
+        if scaleFromX > scaleMax {
+            scaleFromX = scaleMax
+        }
+        if scaleFromX < scaleMin {
+            scaleFromX = scaleMin
+        }
+        
+        let scale = CATransform3DScale(CATransform3DIdentity, scaleFromX, scaleFromX, 1)
+        return CATransform3DConcat(rotation, scale)
     }
 }
 

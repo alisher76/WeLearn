@@ -31,7 +31,7 @@ extension TuorialTableViewCell: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tablecell", for: indexPath) as? OptionTableCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as? OptionTableCell else {
             return UITableViewCell()
         }
         return cell

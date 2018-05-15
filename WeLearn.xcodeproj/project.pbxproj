@@ -10,13 +10,16 @@
 		381DDB270EC35A749DD32A21 /* Pods_WeLearnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C418D03CF9393DD533B627B /* Pods_WeLearnTests.framework */; };
 		755A8D5D4929A68F5E677AAA /* Pods_WeLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF2A760FDD691A7C35BFAD0 /* Pods_WeLearn.framework */; };
 		AC0B8D2F208EB1770074EE70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC0B8D2E208EB1770074EE70 /* GoogleService-Info.plist */; };
+		AC2BC50620AA4D9600D1893F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50520AA4D9600D1893F /* Configuration.swift */; };
+		AC2BC50820AA4E4900D1893F /* SpringTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50720AA4E4900D1893F /* SpringTransforms.swift */; };
+		AC2BC50B20AA4FDE00D1893F /* DesignableCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50A20AA4FDE00D1893F /* DesignableCustomView.swift */; };
+		AC2BC50D20AA78E600D1893F /* SectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50C20AA78E600D1893F /* SectionsCell.swift */; };
 		AC8803F9206329D8008D79F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8803F8206329D8008D79F6 /* AppDelegate.swift */; };
 		AC8803FE206329D8008D79F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FC206329D8008D79F6 /* Main.storyboard */; };
 		AC880400206329D8008D79F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FF206329D8008D79F6 /* Assets.xcassets */; };
 		AC880403206329D8008D79F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC880401206329D8008D79F6 /* LaunchScreen.storyboard */; };
 		AC88040E206329D8008D79F6 /* WeLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88040D206329D8008D79F6 /* WeLearnTests.swift */; };
 		AC88041B20632A6D008D79F6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88041A20632A6D008D79F6 /* HomeVC.swift */; };
-		AC88041E20632EE3008D79F6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88041D20632EE3008D79F6 /* GradientView.swift */; };
 		AC8804242063513F008D79F6 /* HomeVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8804232063513F008D79F6 /* HomeVCCell.swift */; };
 		AC88042620635334008D79F6 /* TopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88042520635334008D79F6 /* TopicVC.swift */; };
 		AC8804282063595D008D79F6 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8804272063595D008D79F6 /* CourseCell.swift */; };
@@ -26,6 +29,7 @@
 		AC8804312064775F008D79F6 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8804302064775F008D79F6 /* TutorialVC.swift */; };
 		AC88043320647ECB008D79F6 /* TutorialTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88043220647ECB008D79F6 /* TutorialTextCell.swift */; };
 		AC88043520647EF0008D79F6 /* TuorialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC88043420647EF0008D79F6 /* TuorialTableViewCell.swift */; };
+		ACA84C46209809440029B054 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA84C45209809440029B054 /* Protocols.swift */; };
 		ACEB58A5206AE2AC00D10881 /* MainCategoryFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB58A4206AE2AC00D10881 /* MainCategoryFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +49,10 @@
 		2C418D03CF9393DD533B627B /* Pods_WeLearnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeLearnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF2A760FDD691A7C35BFAD0 /* Pods_WeLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0B8D2E208EB1770074EE70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Documents/GooglePlist/LearnWeGo/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC2BC50520AA4D9600D1893F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		AC2BC50720AA4E4900D1893F /* SpringTransforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringTransforms.swift; sourceTree = "<group>"; };
+		AC2BC50A20AA4FDE00D1893F /* DesignableCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableCustomView.swift; sourceTree = "<group>"; };
+		AC2BC50C20AA78E600D1893F /* SectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsCell.swift; sourceTree = "<group>"; };
 		AC8803F5206329D8008D79F6 /* WeLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8803F8206329D8008D79F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC8803FD206329D8008D79F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +63,6 @@
 		AC88040D206329D8008D79F6 /* WeLearnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeLearnTests.swift; sourceTree = "<group>"; };
 		AC88040F206329D9008D79F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC88041A20632A6D008D79F6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		AC88041D20632EE3008D79F6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		AC8804232063513F008D79F6 /* HomeVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCCell.swift; sourceTree = "<group>"; };
 		AC88042520635334008D79F6 /* TopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVC.swift; sourceTree = "<group>"; };
 		AC8804272063595D008D79F6 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
@@ -65,6 +72,7 @@
 		AC8804302064775F008D79F6 /* TutorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
 		AC88043220647ECB008D79F6 /* TutorialTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTextCell.swift; sourceTree = "<group>"; };
 		AC88043420647EF0008D79F6 /* TuorialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuorialTableViewCell.swift; sourceTree = "<group>"; };
+		ACA84C45209809440029B054 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		ACEB58A4206AE2AC00D10881 /* MainCategoryFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategoryFlowLayout.swift; sourceTree = "<group>"; };
 		CC1EA0A655B68DE0E8B2782B /* Pods-WeLearnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeLearnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeLearnTests/Pods-WeLearnTests.release.xcconfig"; sourceTree = "<group>"; };
 		E0E6B1039CF27474FB80E516 /* Pods-WeLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeLearn/Pods-WeLearn.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +118,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC2BC50420AA4D7400D1893F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				AC2BC50520AA4D9600D1893F /* Configuration.swift */,
+				AC2BC50720AA4E4900D1893F /* SpringTransforms.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		AC2BC50920AA4FC500D1893F /* DesignableCustom */ = {
+			isa = PBXGroup;
+			children = (
+				AC2BC50A20AA4FDE00D1893F /* DesignableCustomView.swift */,
+			);
+			path = DesignableCustom;
+			sourceTree = "<group>";
+		};
 		AC8803EC206329D8008D79F6 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +158,8 @@
 		AC8803F7206329D8008D79F6 /* WeLearn */ = {
 			isa = PBXGroup;
 			children = (
+				AC2BC50420AA4D7400D1893F /* Configurations */,
+				ACA84C44209809310029B054 /* Protocols */,
 				ACEB58A3206AE28A00D10881 /* Layouts */,
 				AC880429206360EE008D79F6 /* Extensions */,
 				AC8804222063510A008D79F6 /* Controllers */,
@@ -160,7 +187,6 @@
 		AC88041C20632ECC008D79F6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				AC88041D20632EE3008D79F6 /* GradientView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -168,10 +194,12 @@
 		AC880420206350F3008D79F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC2BC50920AA4FC500D1893F /* DesignableCustom */,
 				AC8804232063513F008D79F6 /* HomeVCCell.swift */,
 				AC8804272063595D008D79F6 /* CourseCell.swift */,
 				AC88043220647ECB008D79F6 /* TutorialTextCell.swift */,
 				AC88043420647EF0008D79F6 /* TuorialTableViewCell.swift */,
+				AC2BC50C20AA78E600D1893F /* SectionsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +222,14 @@
 				AC88042E20636535008D79F6 /* UIView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACA84C44209809310029B054 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ACA84C45209809440029B054 /* Protocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		ACEB58A3206AE28A00D10881 /* Layouts */ = {
@@ -421,13 +457,17 @@
 				ACEB58A5206AE2AC00D10881 /* MainCategoryFlowLayout.swift in Sources */,
 				AC8804282063595D008D79F6 /* CourseCell.swift in Sources */,
 				AC8803F9206329D8008D79F6 /* AppDelegate.swift in Sources */,
+				AC2BC50820AA4E4900D1893F /* SpringTransforms.swift in Sources */,
 				AC88042D2063636C008D79F6 /* CollectionViewCell.swift in Sources */,
 				AC88042620635334008D79F6 /* TopicVC.swift in Sources */,
 				AC8804242063513F008D79F6 /* HomeVCCell.swift in Sources */,
+				AC2BC50620AA4D9600D1893F /* Configuration.swift in Sources */,
 				AC88041B20632A6D008D79F6 /* HomeVC.swift in Sources */,
 				AC88043320647ECB008D79F6 /* TutorialTextCell.swift in Sources */,
-				AC88041E20632EE3008D79F6 /* GradientView.swift in Sources */,
+				ACA84C46209809440029B054 /* Protocols.swift in Sources */,
 				AC88043520647EF0008D79F6 /* TuorialTableViewCell.swift in Sources */,
+				AC2BC50D20AA78E600D1893F /* SectionsCell.swift in Sources */,
+				AC2BC50B20AA4FDE00D1893F /* DesignableCustomView.swift in Sources */,
 				AC88042F20636535008D79F6 /* UIView.swift in Sources */,
 				AC8804312064775F008D79F6 /* TutorialVC.swift in Sources */,
 				AC88042B20636104008D79F6 /* UIImage.swift in Sources */,

@@ -12,18 +12,35 @@ class HomeVC: UIViewController {
     
     // Outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var tableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        scrollView.delegate = self
         collectionView.delegate = self
         collectionView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 140
+        
+        navigationItem.title = "WeLearn"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.isOpaque = false
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 50)]
     }
 
 }
 
 
-extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -38,14 +55,14 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         cell.layer.cornerRadius = 14
-        cell.layer.transform = animateCell(cellFrame: cell.frame)
+        cell.layer.transform = spring3DCoverFlow(frame: cell.frame)
         return cell
     }
     
 }
 
 
-extension HomeVC: UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
+extension HomeVC: UICollectionViewDelegateFlowLayout, UIViewControllerTransitioningDelegate {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = Int(collectionView.frame.width - 40)
@@ -53,42 +70,114 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
         return CGSize(width: width, height: height)
     }
     
+    // ScrollViewDidSCroll Settings
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         if let collectionV = scrollView as? UICollectionView {
-            for cell in collectionV.visibleCells as! [HomeVCCell] {
-                let indexPath = collectionV.indexPath(for: cell)!
-                let attributes = collectionV.layoutAttributesForItem(at: indexPath)!
-                let cellFrame = collectionV.convert(attributes.frame, to: view)
+            animateCell(collectionView: collectionV)
+            return
+        }
+            let offsetY = scrollView.contentOffset.y
+            if offsetY < 0 {
+//                contentView.transform = CGAffineTransform(translationX: 0, y: offsetY)
+//                phoneImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/2)
+//                backgroundImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/3)
+//                titleLabel.transform = CGAffineTransform(translationX: 0, y: -offsetY/4)
+//                bodyView.transform = CGAffineTransform(translationX: 0, y: -offsetY/5)
+            }
+            
+            if offsetY > 2 {
+                UIView.animate(withDuration: 2, animations: {
+                    self.navigationController?.setNavigationBarHidden(false, animated: true)
+                })
+            } else {
+                UIView.animate(withDuration: 2, animations: {
+                    self.navigationController?.setNavigationBarHidden(true, animated: true)
+                })
+            }
+        
+        
+    }
+    
+    func animateCell(collectionView: UICollectionView) {
+        
+        for cell in collectionView.visibleCells as! [HomeVCCell] {
+            
+            let indexPath = collectionView.indexPath(for: cell)!
+            let attributes = collectionView.layoutAttributesForItem(at: indexPath)!
+            let cellFrame = collectionView.convert(attributes.frame, to: view)
+            
+//            if appHasWideScreenForView(view) {
+//                cell.layer.transform = spring3DCoverFlowLarge(frame: cellFrame)
+//
+//                let translationX = cellFrame.origin.x / 17
+//                cell.backgroundImageView.transform = CGAffineTransform(translationX: translationX, y: 0)
+//            } else {
+                cell.layer.transform = spring3DCoverFlow(frame: cellFrame)
                 
                 let translationX = cellFrame.origin.x / 5
                 cell.categoryImage.transform = CGAffineTransform(translationX: translationX, y: 0)
-                cell.layer.transform = animateCell(cellFrame: cellFrame)
-            }
         }
-    }
-    
-    func animateCell(cellFrame: CGRect) -> CATransform3D {
-        let andleFromX = Double((-cellFrame.origin.x) / 12)
-        let angle = CGFloat((andleFromX * Double.pi) / 300.0)
-        
-        var transform = CATransform3DIdentity
-        transform.m34 = -1.0/1000
-        let rotation = CATransform3DRotate(transform, angle, 0, 1, 0)
-        
-        // get a value between 1 and 0
-        var scaleFromX = (1000 - (cellFrame.origin.x - 200)) / 1000
-        let scaleMax: CGFloat = 1.0
-        let scaleMin: CGFloat = 0.2
-        if scaleFromX > scaleMax {
-            scaleFromX = scaleMax
-        }
-        if scaleFromX < scaleMin {
-            scaleFromX = scaleMin
-        }
-        
-        let scale = CATransform3DScale(CATransform3DIdentity, scaleFromX, scaleFromX, 1)
-        return CATransform3DConcat(rotation, scale)
     }
 }
 
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as? SectionsCell else { return UITableViewCell() }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .clear
+        
+        let lineView = UIView()
+        lineView.backgroundColor = .white
+        lineView.frame = CGRect(x: 2, y: 0, width: 2, height: 28)
+        view.addSubview(lineView)
+        
+        let btn = UIButton()
+        btn.frame = CGRect(x: (self.view.frame.width - 60), y: 5, width: 15, height: 15)
+        btn.backgroundColor = .clear
+        btn.setImage(UIImage(named: "nextWhite")!, for: .normal)
+        view.addSubview(btn)
+        
+        let label = UILabel()
+        label.text = "section\(section)"
+        label.textColor = .white
+        label.frame = CGRect(x: 30, y: 2.5, width: 100, height: 30)
+        view.addSubview(label)
+        
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .clear
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 35
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50.0
+    }
+    
+}

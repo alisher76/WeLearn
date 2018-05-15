@@ -13,7 +13,7 @@
 		AC2BC50620AA4D9600D1893F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50520AA4D9600D1893F /* Configuration.swift */; };
 		AC2BC50820AA4E4900D1893F /* SpringTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50720AA4E4900D1893F /* SpringTransforms.swift */; };
 		AC2BC50B20AA4FDE00D1893F /* DesignableCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50A20AA4FDE00D1893F /* DesignableCustomView.swift */; };
-		AC2BC50D20AA78E600D1893F /* SectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50C20AA78E600D1893F /* SectionsCell.swift */; };
+		AC2BC50F20AA88DF00D1893F /* NewChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50E20AA88DF00D1893F /* NewChallengeCell.swift */; };
 		AC8803F9206329D8008D79F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8803F8206329D8008D79F6 /* AppDelegate.swift */; };
 		AC8803FE206329D8008D79F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FC206329D8008D79F6 /* Main.storyboard */; };
 		AC880400206329D8008D79F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FF206329D8008D79F6 /* Assets.xcassets */; };
@@ -52,7 +52,7 @@
 		AC2BC50520AA4D9600D1893F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		AC2BC50720AA4E4900D1893F /* SpringTransforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringTransforms.swift; sourceTree = "<group>"; };
 		AC2BC50A20AA4FDE00D1893F /* DesignableCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableCustomView.swift; sourceTree = "<group>"; };
-		AC2BC50C20AA78E600D1893F /* SectionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsCell.swift; sourceTree = "<group>"; };
+		AC2BC50E20AA88DF00D1893F /* NewChallengeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeCell.swift; sourceTree = "<group>"; };
 		AC8803F5206329D8008D79F6 /* WeLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8803F8206329D8008D79F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC8803FD206329D8008D79F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 				AC8804272063595D008D79F6 /* CourseCell.swift */,
 				AC88043220647ECB008D79F6 /* TutorialTextCell.swift */,
 				AC88043420647EF0008D79F6 /* TuorialTableViewCell.swift */,
-				AC2BC50C20AA78E600D1893F /* SectionsCell.swift */,
+				AC2BC50E20AA88DF00D1893F /* NewChallengeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -466,11 +466,11 @@
 				AC88043320647ECB008D79F6 /* TutorialTextCell.swift in Sources */,
 				ACA84C46209809440029B054 /* Protocols.swift in Sources */,
 				AC88043520647EF0008D79F6 /* TuorialTableViewCell.swift in Sources */,
-				AC2BC50D20AA78E600D1893F /* SectionsCell.swift in Sources */,
 				AC2BC50B20AA4FDE00D1893F /* DesignableCustomView.swift in Sources */,
 				AC88042F20636535008D79F6 /* UIView.swift in Sources */,
 				AC8804312064775F008D79F6 /* TutorialVC.swift in Sources */,
 				AC88042B20636104008D79F6 /* UIImage.swift in Sources */,
+				AC2BC50F20AA88DF00D1893F /* NewChallengeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

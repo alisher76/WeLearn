@@ -9,9 +9,9 @@
 import UIKit
 
 public func spring3DCoverFlow(frame: CGRect) -> CATransform3D {
-    let degrees = Double((-frame.origin.x) / 12)
+    let degrees = Double((-frame.origin.x) / 10)
     
-    var scale = (1000 - (frame.origin.x - 200)) / 1000
+    var scale = (1000 - (frame.origin.x - 160)) / 1000
     if scale > 1 {
         scale = 1
     }

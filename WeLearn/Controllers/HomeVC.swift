@@ -27,15 +27,15 @@ class HomeVC: UIViewController {
         challengesCollectionView.dataSource = self
         secondCollectionView.delegate = self
         secondCollectionView.dataSource = self
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         
-        navigationItem.title = "WeLearn"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.isOpaque = false
-        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 50)]
+//        self.navigationController?.navigationBar.isTranslucent = true
+//        self.navigationController?.navigationBar.isOpaque = false
+//        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 50)]
     }
 }
 
@@ -98,15 +98,15 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UIViewControllerTransition
                 // To Do
             }
             
-            if offsetY > 0 {
-                UIView.animate(withDuration: 2, animations: {
-                    self.navigationController?.setNavigationBarHidden(false, animated: true)
-                })
-            } else {
-                UIView.animate(withDuration: 2, animations: {
-                    self.navigationController?.setNavigationBarHidden(true, animated: true)
-                })
-            }
+//            if offsetY > 0 {
+//                UIView.animate(withDuration: 2, animations: {
+//                    self.navigationController?.setNavigationBarHidden(false, animated: true)
+//                })
+//            } else {
+//                UIView.animate(withDuration: 1, animations: {
+//                    self.navigationController?.setNavigationBarHidden(true, animated: true)
+//                })
+//            }
         
         
     }

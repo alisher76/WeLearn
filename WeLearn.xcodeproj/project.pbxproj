@@ -14,6 +14,7 @@
 		AC2BC50820AA4E4900D1893F /* SpringTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50720AA4E4900D1893F /* SpringTransforms.swift */; };
 		AC2BC50B20AA4FDE00D1893F /* DesignableCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50A20AA4FDE00D1893F /* DesignableCustomView.swift */; };
 		AC2BC50F20AA88DF00D1893F /* NewChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50E20AA88DF00D1893F /* NewChallengeCell.swift */; };
+		AC4C8C7220AC7B7A0008422D /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = AC4C8C7120AC7B7A0008422D /* Fonts */; };
 		AC65025220ABD07E00348566 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65025120ABD07E00348566 /* TopicCell.swift */; };
 		AC8803F9206329D8008D79F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8803F8206329D8008D79F6 /* AppDelegate.swift */; };
 		AC8803FE206329D8008D79F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FC206329D8008D79F6 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		AC2BC50720AA4E4900D1893F /* SpringTransforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringTransforms.swift; sourceTree = "<group>"; };
 		AC2BC50A20AA4FDE00D1893F /* DesignableCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableCustomView.swift; sourceTree = "<group>"; };
 		AC2BC50E20AA88DF00D1893F /* NewChallengeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeCell.swift; sourceTree = "<group>"; };
+		AC4C8C7120AC7B7A0008422D /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		AC65025120ABD07E00348566 /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		AC8803F5206329D8008D79F6 /* WeLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8803F8206329D8008D79F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,9 +139,18 @@
 			path = DesignableCustom;
 			sourceTree = "<group>";
 		};
+		AC4C8C6E20AC7A990008422D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC4C8C7120AC7B7A0008422D /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AC8803EC206329D8008D79F6 = {
 			isa = PBXGroup;
 			children = (
+				AC4C8C6E20AC7A990008422D /* Resources */,
 				AC8803F7206329D8008D79F6 /* WeLearn */,
 				AC88040C206329D8008D79F6 /* WeLearnTests */,
 				AC8803F6206329D8008D79F6 /* Products */,
@@ -332,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4C8C7220AC7B7A0008422D /* Fonts in Resources */,
 				AC880403206329D8008D79F6 /* LaunchScreen.storyboard in Resources */,
 				AC0B8D2F208EB1770074EE70 /* GoogleService-Info.plist in Resources */,
 				AC880400206329D8008D79F6 /* Assets.xcassets in Resources */,

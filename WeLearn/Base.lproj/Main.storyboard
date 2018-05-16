@@ -10,6 +10,20 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+        <array key="SFCompactDisplay-Bold.otf">
+            <string>SFCompactDisplay-Bold</string>
+        </array>
+        <array key="SFCompactDisplay-Light.otf">
+            <string>SFCompactDisplay-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--WeLearn-->
         <scene sceneID="tne-QT-ifu">
@@ -27,10 +41,47 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="1378"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqn-qK-ai9">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1378"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1424"/>
                                         <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qPz-qL-Pr2" userLabel="WeLearnStak">
+                                                <rect key="frame" x="20" y="10" width="355" height="70.333333333333329"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TIY-Sd-xcy" userLabel="weLearnTopStack">
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="68.333333333333329"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeLearn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTK-gu-n2S" customClass="DesignableLabel" customModule="WeLearn" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="44.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="37"/>
+                                                                <color key="textColor" red="0.173940599" green="0.24193984269999999" blue="0.31265199179999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="uppercase" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fitToWidth" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeLearn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFI-Rn-iFz" customClass="DesignableLabel" customModule="WeLearn" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="44.333333333333343" width="355" height="24"/>
+                                                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="20"/>
+                                                                <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="uppercase" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fitToWidth" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUY-Fz-9Nt">
+                                                        <rect key="frame" x="0.0" y="68.333333333333343" width="355" height="2"/>
+                                                        <color key="backgroundColor" name="scrollBarColor" catalog="System" colorSpace="catalog"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="2" id="2KE-Bk-GfT"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdH-bk-OxX" userLabel="CollectionV">
-                                                <rect key="frame" x="0.0" y="10" width="375" height="300"/>
+                                                <rect key="frame" x="0.0" y="86.333333333333343" width="375" height="300"/>
                                                 <subviews>
                                                     <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rLy-Hc-h8V">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
@@ -56,7 +107,7 @@
                                                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="su2-jf-ufK">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="280" height="200"/>
                                                                                     <subviews>
-                                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios11-cell" translatesAutoresizingMaskIntoConstraints="NO" id="JBK-fO-zT3">
+                                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vida" translatesAutoresizingMaskIntoConstraints="NO" id="JBK-fO-zT3">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="280" height="200"/>
                                                                                         </imageView>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Basics of iOS programming" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kva-nG-BwA">
@@ -143,33 +194,33 @@
                                                     <constraint firstItem="rLy-Hc-h8V" firstAttribute="top" secondItem="OdH-bk-OxX" secondAttribute="top" id="kis-5c-Z07"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuP-PS-aKu">
-                                                <rect key="frame" x="0.0" y="310" width="375" height="180"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuP-PS-aKu" userLabel="ChaptersV">
+                                                <rect key="frame" x="0.0" y="386.33333333333331" width="375" height="179.99999999999994"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNO-aa-xLD" userLabel="MainSection">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
                                                         <subviews>
                                                             <collectionView multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vQz-ej-F88">
-                                                                <rect key="frame" x="0.0" y="38" width="375" height="154"/>
+                                                                <rect key="frame" x="0.0" y="37" width="375" height="155"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="20" id="Zpj-Fe-ctP">
                                                                     <size key="itemSize" width="140" height="80"/>
                                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="40" maxY="0.0"/>
+                                                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                                 </collectionViewFlowLayout>
                                                                 <cells>
                                                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newChallengeCell" id="zpX-3J-J9S" customClass="NewChallengeCell" customModule="WeLearn" customModuleProvider="target">
-                                                                        <rect key="frame" x="20" y="37" width="140" height="80"/>
+                                                                        <rect key="frame" x="20" y="37.666666666666664" width="140" height="80"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                             <rect key="frame" x="0.0" y="0.0" width="140" height="80"/>
                                                                             <autoresizingMask key="autoresizingMask"/>
                                                                             <subviews>
-                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jk0-Fb-rzd" customClass="DesignableView" customModule="DesignCodeApp" customModuleProvider="target">
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jk0-Fb-rzd" customClass="DesignableView" customModule="WeLearn" customModuleProvider="target">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="140" height="80"/>
                                                                                     <subviews>
-                                                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YE2-Qk-E4s" customClass="DesignableView" customModule="DesignCodeApp" customModuleProvider="target">
+                                                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YE2-Qk-E4s" customClass="DesignableView" customModule="WeLearn" customModuleProvider="target">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="140" height="80"/>
                                                                                             <subviews>
                                                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="network" translatesAutoresizingMaskIntoConstraints="NO" id="vbH-kd-Gem">
@@ -181,7 +232,7 @@
                                                                                                     <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
-                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Xcode 9" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5Y-Gl-gbA" customClass="DesignableLabel" customModule="DesignCodeApp" customModuleProvider="target">
+                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Xcode 9" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5Y-Gl-gbA" customClass="DesignableLabel" customModule="WeLearn" customModuleProvider="target">
                                                                                                     <rect key="frame" x="4" y="4" width="116" height="19.333333333333332"/>
                                                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -241,10 +292,10 @@
                                                                     </collectionViewCell>
                                                                 </cells>
                                                             </collectionView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAPTER 3: 6 Sections" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3H-7h-kG8" customClass="DesignableLabel" customModule="DesignCodeApp" customModuleProvider="target">
-                                                                <rect key="frame" x="20" y="10" width="335" height="18"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                                <color key="textColor" red="1" green="0.99215686270000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAPTER 3: 6 Sections" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3H-7h-kG8" customClass="DesignableLabel" customModule="WeLearn" customModuleProvider="target">
+                                                                <rect key="frame" x="20" y="10" width="335" height="17"/>
+                                                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
+                                                                <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                                 <nil key="highlightedColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="uppercase" value="YES"/>
@@ -285,35 +336,32 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lq-Lo-RBB" userLabel="SecondSection">
-                                                <rect key="frame" x="0.0" y="498" width="375" height="381"/>
+                                                <rect key="frame" x="0.0" y="576.33333333333337" width="375" height="300"/>
                                                 <subviews>
-                                                    <collectionView multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3kU-fJ-TMy">
-                                                        <rect key="frame" x="10" y="38" width="365" height="327"/>
+                                                    <collectionView multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3kU-fJ-TMy">
+                                                        <rect key="frame" x="0.0" y="37" width="375" height="263"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="327" id="zgA-zC-1jr"/>
-                                                        </constraints>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="20" id="MjO-fg-jN3">
                                                             <size key="itemSize" width="344" height="80"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="40" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="topicCell" id="v3j-WM-2kn" customClass="TopicCell" customModule="WeLearn" customModuleProvider="target">
-                                                                <rect key="frame" x="20" y="0.0" width="344" height="80"/>
+                                                                <rect key="frame" x="20" y="20" width="344" height="80"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                     <rect key="frame" x="0.0" y="0.0" width="344" height="80"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEH-fc-fUp" customClass="DesignableView" customModule="DesignCodeApp" customModuleProvider="target">
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEH-fc-fUp" customClass="DesignableView" customModule="WeLearn" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="344" height="80"/>
                                                                             <subviews>
-                                                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9RS-El-66g" customClass="DesignableView" customModule="DesignCodeApp" customModuleProvider="target">
+                                                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9RS-El-66g" customClass="DesignableView" customModule="WeLearn" customModuleProvider="target">
                                                                                     <rect key="frame" x="4" y="10" width="60" height="60"/>
                                                                                     <subviews>
-                                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="network" translatesAutoresizingMaskIntoConstraints="NO" id="lIq-9i-Ubx">
+                                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ubuntu" translatesAutoresizingMaskIntoConstraints="NO" id="lIq-9i-Ubx">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                                         </imageView>
                                                                                     </subviews>
@@ -335,20 +383,20 @@
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jNa-Gk-lsb">
                                                                                     <rect key="frame" x="84" y="27" width="194" height="26.333333333333329"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAPTER 4: Interview Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aQ-as-H56" customClass="DesignableLabel" customModule="DesignCodeApp" customModuleProvider="target">
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAPTER 4: Interview Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aQ-as-H56" customClass="DesignableLabel" customModule="WeLearn" customModuleProvider="target">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="194" height="14.333333333333334"/>
                                                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
-                                                                                            <color key="textColor" red="1" green="0.99215686270000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                             <userDefinedRuntimeAttributes>
                                                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="uppercase" value="YES"/>
                                                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="fitToWidth" value="YES"/>
                                                                                             </userDefinedRuntimeAttributes>
                                                                                         </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAPTER 4: Interview Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0Z-XZ-Ma6" customClass="DesignableLabel" customModule="DesignCodeApp" customModuleProvider="target">
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAPTER 4: Interview Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0Z-XZ-Ma6" customClass="DesignableLabel" customModule="WeLearn" customModuleProvider="target">
                                                                                             <rect key="frame" x="0.0" y="14.333333333333336" width="194" height="12"/>
                                                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
-                                                                                            <color key="textColor" red="1" green="0.99215686270000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                             <userDefinedRuntimeAttributes>
                                                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="uppercase" value="YES"/>
@@ -358,7 +406,7 @@
                                                                                     </subviews>
                                                                                 </stackView>
                                                                             </subviews>
-                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="backgroundColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                                                                             <constraints>
                                                                                 <constraint firstItem="jNa-Gk-lsb" firstAttribute="leading" secondItem="9RS-El-66g" secondAttribute="leading" constant="80" id="OnO-ph-jeL"/>
                                                                                 <constraint firstItem="9RS-El-66g" firstAttribute="centerY" secondItem="pEH-fc-fUp" secondAttribute="centerY" id="RuC-j4-RpZ"/>
@@ -382,6 +430,7 @@
                                                                         </view>
                                                                     </subviews>
                                                                 </view>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="pEH-fc-fUp" secondAttribute="trailing" id="3Qt-W3-ZXr"/>
                                                                     <constraint firstItem="pEH-fc-fUp" firstAttribute="leading" secondItem="v3j-WM-2kn" secondAttribute="leading" id="MJo-zO-RuI"/>
@@ -391,10 +440,10 @@
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAPTER 4: Interview Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntI-tv-A9P" customClass="DesignableLabel" customModule="DesignCodeApp" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="10" width="335" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                        <color key="textColor" red="1" green="0.99215686270000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAPTER 4: Interview Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntI-tv-A9P" customClass="DesignableLabel" customModule="WeLearn" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="10" width="335" height="17"/>
+                                                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                                                        <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                         <nil key="highlightedColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="uppercase" value="YES"/>
@@ -404,11 +453,13 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="3kU-fJ-TMy" firstAttribute="top" secondItem="ntI-tv-A9P" secondAttribute="bottom" constant="10" id="2H7-0b-WPf"/>
-                                                    <constraint firstItem="ppW-xZ-ULN" firstAttribute="trailing" secondItem="3kU-fJ-TMy" secondAttribute="trailing" id="Iew-Rh-vjs"/>
-                                                    <constraint firstItem="ppW-xZ-ULN" firstAttribute="bottom" secondItem="3kU-fJ-TMy" secondAttribute="bottom" constant="16" id="Zsr-cB-fWY"/>
+                                                    <constraint firstItem="3kU-fJ-TMy" firstAttribute="top" secondItem="ntI-tv-A9P" secondAttribute="bottom" constant="10" id="K3j-6E-RfN"/>
+                                                    <constraint firstItem="ntI-tv-A9P" firstAttribute="top" secondItem="ppW-xZ-ULN" secondAttribute="top" constant="10" id="NxT-U1-kix"/>
+                                                    <constraint firstItem="3kU-fJ-TMy" firstAttribute="trailing" secondItem="ppW-xZ-ULN" secondAttribute="trailing" id="ZBV-G8-huj"/>
+                                                    <constraint firstItem="ppW-xZ-ULN" firstAttribute="bottom" secondItem="3kU-fJ-TMy" secondAttribute="bottom" id="aVd-9Q-rHI"/>
+                                                    <constraint firstAttribute="height" constant="300" id="e3z-S9-mGQ"/>
                                                     <constraint firstItem="ppW-xZ-ULN" firstAttribute="trailing" secondItem="ntI-tv-A9P" secondAttribute="trailing" constant="20" id="fi4-2P-lzT"/>
-                                                    <constraint firstItem="3kU-fJ-TMy" firstAttribute="leading" secondItem="ppW-xZ-ULN" secondAttribute="leading" constant="10" id="iX3-bm-RvE"/>
+                                                    <constraint firstItem="3kU-fJ-TMy" firstAttribute="leading" secondItem="ppW-xZ-ULN" secondAttribute="leading" id="tU1-c5-LcW"/>
                                                     <constraint firstItem="ntI-tv-A9P" firstAttribute="leading" secondItem="ppW-xZ-ULN" secondAttribute="leading" constant="20" id="yTJ-VJ-EMX"/>
                                                 </constraints>
                                                 <viewLayoutGuide key="safeArea" id="ppW-xZ-ULN"/>
@@ -424,17 +475,19 @@
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="6lq-Lo-RBB" firstAttribute="centerY" secondItem="Xqn-qK-ai9" secondAttribute="centerY" id="2kc-Oi-DqJ"/>
+                                            <constraint firstItem="OdH-bk-OxX" firstAttribute="top" secondItem="qPz-qL-Pr2" secondAttribute="bottom" constant="6" id="0U8-OV-Hjr"/>
+                                            <constraint firstAttribute="trailing" secondItem="qPz-qL-Pr2" secondAttribute="trailing" id="2L2-nF-Cwe"/>
+                                            <constraint firstItem="6lq-Lo-RBB" firstAttribute="trailing" secondItem="wuP-PS-aKu" secondAttribute="trailing" id="7be-sI-PjY"/>
+                                            <constraint firstItem="qPz-qL-Pr2" firstAttribute="leading" secondItem="Xqn-qK-ai9" secondAttribute="leading" constant="20" id="GKy-0p-xOC"/>
+                                            <constraint firstItem="qPz-qL-Pr2" firstAttribute="top" secondItem="Xqn-qK-ai9" secondAttribute="top" constant="10" id="IOE-PH-XBH"/>
                                             <constraint firstAttribute="trailing" secondItem="OdH-bk-OxX" secondAttribute="trailing" id="Jhy-kA-nju"/>
-                                            <constraint firstItem="6lq-Lo-RBB" firstAttribute="leading" secondItem="wuP-PS-aKu" secondAttribute="leading" id="KEN-QU-4Xq"/>
                                             <constraint firstItem="wuP-PS-aKu" firstAttribute="leading" secondItem="Xqn-qK-ai9" secondAttribute="leading" id="LK3-Wf-H2G"/>
+                                            <constraint firstItem="6lq-Lo-RBB" firstAttribute="top" secondItem="wuP-PS-aKu" secondAttribute="bottom" constant="10" id="Rxf-jH-6Jb"/>
                                             <constraint firstItem="OdH-bk-OxX" firstAttribute="leading" secondItem="Xqn-qK-ai9" secondAttribute="leading" id="aEN-kx-4TS"/>
                                             <constraint firstItem="wuP-PS-aKu" firstAttribute="top" secondItem="OdH-bk-OxX" secondAttribute="bottom" id="aSN-dC-ifC"/>
                                             <constraint firstAttribute="trailing" secondItem="wuP-PS-aKu" secondAttribute="trailing" id="dOq-pr-0KJ"/>
-                                            <constraint firstItem="6lq-Lo-RBB" firstAttribute="top" secondItem="wuP-PS-aKu" secondAttribute="bottom" constant="8" symbolic="YES" id="fbu-OR-HhD"/>
-                                            <constraint firstItem="6lq-Lo-RBB" firstAttribute="trailing" secondItem="wuP-PS-aKu" secondAttribute="trailing" id="pRI-7U-0Iv"/>
-                                            <constraint firstAttribute="bottom" secondItem="6lq-Lo-RBB" secondAttribute="bottom" constant="499" id="ulb-lz-6Fo"/>
-                                            <constraint firstItem="OdH-bk-OxX" firstAttribute="top" secondItem="Xqn-qK-ai9" secondAttribute="top" constant="10" id="uwg-IQ-3Sw"/>
+                                            <constraint firstAttribute="bottom" secondItem="6lq-Lo-RBB" secondAttribute="bottom" constant="588" id="fw9-xc-ASv"/>
+                                            <constraint firstItem="6lq-Lo-RBB" firstAttribute="leading" secondItem="Xqn-qK-ai9" secondAttribute="leading" id="pGv-Er-ZbB"/>
                                             <constraint firstItem="OdH-bk-OxX" firstAttribute="centerX" secondItem="Xqn-qK-ai9" secondAttribute="centerX" id="y7P-GD-R9t"/>
                                         </constraints>
                                     </scrollView>
@@ -444,23 +497,23 @@
                                     <constraint firstAttribute="trailing" secondItem="Xqn-qK-ai9" secondAttribute="trailing" id="42c-92-bWo"/>
                                     <constraint firstItem="Xqn-qK-ai9" firstAttribute="leading" secondItem="sls-BN-Eut" secondAttribute="leading" id="H3X-cR-upy"/>
                                     <constraint firstItem="Xqn-qK-ai9" firstAttribute="top" secondItem="sls-BN-Eut" secondAttribute="top" id="Vrq-8j-GiB"/>
-                                    <constraint firstAttribute="bottom" secondItem="Xqn-qK-ai9" secondAttribute="bottom" id="fpr-sp-JnG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xqn-qK-ai9" secondAttribute="bottom" constant="-46" id="fpr-sp-JnG"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sls-BN-Eut" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="P2v-UY-jpH"/>
+                            <constraint firstItem="sls-BN-Eut" firstAttribute="top" secondItem="30w-yd-RVu" secondAttribute="bottom" id="e3D-3e-LNc"/>
                             <constraint firstItem="dPc-dp-JgI" firstAttribute="top" secondItem="sls-BN-Eut" secondAttribute="bottom" id="jiJ-6W-KFm"/>
                             <constraint firstItem="sls-BN-Eut" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u53-fg-NRO"/>
-                            <constraint firstItem="sls-BN-Eut" firstAttribute="top" secondItem="30w-yd-RVu" secondAttribute="bottom" id="vhM-Gm-voY"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                <color key="value" red="0.51372549019607838" green="0.64313725490196072" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                <color key="value" red="0.82745098039215681" green="0.80000000000000004" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
                                 <real key="value" value="0.40000000000000002"/>
@@ -660,10 +713,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tgx-2F-hIK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="Tab Bar/home" selectedImage="Tab Bar/home-active" id="nXW-jq-MmP"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Axb-d2-xQJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Axb-d2-xQJ">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.85098039219999999" green="0.65490196079999996" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="secondarySelectedControlColor" catalog="System" colorSpace="catalog"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -679,8 +732,9 @@
         <image name="Tab Bar/home" width="24" height="25"/>
         <image name="Tab Bar/home-active" width="24" height="25"/>
         <image name="back" width="30" height="30"/>
-        <image name="ios11-cell" width="446" height="248"/>
         <image name="network" width="1920" height="1080"/>
         <image name="sample" width="3648" height="5472"/>
+        <image name="ubuntu" width="1680" height="1050"/>
+        <image name="vida" width="1680" height="1050"/>
     </resources>
 </document>

@@ -14,6 +14,7 @@
 		AC2BC50820AA4E4900D1893F /* SpringTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50720AA4E4900D1893F /* SpringTransforms.swift */; };
 		AC2BC50B20AA4FDE00D1893F /* DesignableCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50A20AA4FDE00D1893F /* DesignableCustomView.swift */; };
 		AC2BC50F20AA88DF00D1893F /* NewChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2BC50E20AA88DF00D1893F /* NewChallengeCell.swift */; };
+		AC65025220ABD07E00348566 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65025120ABD07E00348566 /* TopicCell.swift */; };
 		AC8803F9206329D8008D79F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8803F8206329D8008D79F6 /* AppDelegate.swift */; };
 		AC8803FE206329D8008D79F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FC206329D8008D79F6 /* Main.storyboard */; };
 		AC880400206329D8008D79F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8803FF206329D8008D79F6 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		AC2BC50720AA4E4900D1893F /* SpringTransforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringTransforms.swift; sourceTree = "<group>"; };
 		AC2BC50A20AA4FDE00D1893F /* DesignableCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableCustomView.swift; sourceTree = "<group>"; };
 		AC2BC50E20AA88DF00D1893F /* NewChallengeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeCell.swift; sourceTree = "<group>"; };
+		AC65025120ABD07E00348566 /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		AC8803F5206329D8008D79F6 /* WeLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8803F8206329D8008D79F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC8803FD206329D8008D79F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				AC88043220647ECB008D79F6 /* TutorialTextCell.swift */,
 				AC88043420647EF0008D79F6 /* TuorialTableViewCell.swift */,
 				AC2BC50E20AA88DF00D1893F /* NewChallengeCell.swift */,
+				AC65025120ABD07E00348566 /* TopicCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				AC88042D2063636C008D79F6 /* CollectionViewCell.swift in Sources */,
 				AC88042620635334008D79F6 /* TopicVC.swift in Sources */,
 				AC8804242063513F008D79F6 /* HomeVCCell.swift in Sources */,
+				AC65025220ABD07E00348566 /* TopicCell.swift in Sources */,
 				AC2BC50620AA4D9600D1893F /* Configuration.swift in Sources */,
 				AC88041B20632A6D008D79F6 /* HomeVC.swift in Sources */,
 				AC88043320647ECB008D79F6 /* TutorialTextCell.swift in Sources */,

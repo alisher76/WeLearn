@@ -12,7 +12,8 @@ class HomeVC: UIViewController {
     
     // Outlets
     @IBOutlet weak var categoryCollectionView: UICollectionView!
-    @IBOutlet weak var challengesCpllectionView: UICollectionView!
+    @IBOutlet weak var challengesCollectionView: UICollectionView!
+    @IBOutlet weak var secondCollectionView: UICollectionView!
     @IBOutlet weak var scrollView: UIScrollView!
     
     
@@ -22,8 +23,10 @@ class HomeVC: UIViewController {
         scrollView.delegate = self
         categoryCollectionView.delegate = self
         categoryCollectionView.dataSource = self
-        challengesCpllectionView.delegate = self
-        challengesCpllectionView.dataSource = self
+        challengesCollectionView.delegate = self
+        challengesCollectionView.dataSource = self
+        secondCollectionView.delegate = self
+        secondCollectionView.dataSource = self
         
         navigationItem.title = "WeLearn"
     }
@@ -44,7 +47,9 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UIScroll
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == categoryCollectionView { return 4 } else { return 6 }
+        if collectionView == categoryCollectionView { return 4 }
+        else if collectionView == challengesCollectionView { return 6 }
+        else { return 8 }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -55,10 +60,11 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UIScroll
             cell.layer.cornerRadius = 14
             cell.layer.transform = spring3DCoverFlow(frame: cell.frame)
             return cell
+        } else if collectionView == challengesCollectionView {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newChallengeCell", for: indexPath) as? NewChallengeCell else { return UICollectionViewCell() }
+            return cell
         } else {
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newChallengeCell", for: indexPath) as? NewChallengeCell else {
-                return UICollectionViewCell()
-            }
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topicCell", for: indexPath) as? TopicCell else { return UICollectionViewCell() }
             return cell
         }
     }
@@ -73,8 +79,10 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UIViewControllerTransition
             let width = Int(collectionView.frame.width - 40)
             let height = Int(collectionView.frame.height - 60)
             return CGSize(width: width, height: height)
-        } else {
+        } else if collectionView == challengesCollectionView {
             return CGSize(width: (collectionView.frame.width) / 3, height: (collectionView.frame.height - 40))
+        } else {
+            return CGSize(width: (collectionView.frame.width) - 40, height: (collectionView.frame.height) / 4)
         }
     }
     
@@ -87,14 +95,10 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UIViewControllerTransition
         }
             let offsetY = scrollView.contentOffset.y
             if offsetY < 0 {
-//                contentView.transform = CGAffineTransform(translationX: 0, y: offsetY)
-//                phoneImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/2)
-//                backgroundImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/3)
-//                titleLabel.transform = CGAffineTransform(translationX: 0, y: -offsetY/4)
-//                bodyView.transform = CGAffineTransform(translationX: 0, y: -offsetY/5)
+                // To Do
             }
             
-            if offsetY > 2 {
+            if offsetY > 0 {
                 UIView.animate(withDuration: 2, animations: {
                     self.navigationController?.setNavigationBarHidden(false, animated: true)
                 })
@@ -115,19 +119,16 @@ extension HomeVC: UICollectionViewDelegateFlowLayout, UIViewControllerTransition
                 let indexPath = collectionView.indexPath(for: cell)!
                 let attributes = collectionView.layoutAttributesForItem(at: indexPath)!
                 let cellFrame = collectionView.convert(attributes.frame, to: view)
-                
-                //            if appHasWideScreenForView(view) {
-                //                cell.layer.transform = spring3DCoverFlowLarge(frame: cellFrame)
-                //
-                //                let translationX = cellFrame.origin.x / 17
-                //                cell.backgroundImageView.transform = CGAffineTransform(translationX: translationX, y: 0)
-                //            } else {
                 cell.layer.transform = spring3DCoverFlow(frame: cellFrame)
                 
                 let translationX = cellFrame.origin.x / 5
                 cell.categoryImage.transform = CGAffineTransform(translationX: translationX, y: 0)
             }
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
     }
 }
 

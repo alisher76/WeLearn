@@ -18,7 +18,7 @@ import UIKit
     
     @IBInspectable public var shadowOffsetY: CGFloat = 0 {
         didSet {
-            //            layer.shadowOffset.height = shadowOffsetY
+            
             let bounds = layer.bounds
             let cgRect = CGRect(x: bounds.origin.x, y: shadowOffsetY + 3, width: bounds.width, height: bounds.height)
             layer.shadowPath = UIBezierPath(rect: cgRect).cgPath
